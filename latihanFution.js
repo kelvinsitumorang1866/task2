@@ -151,10 +151,24 @@ console.log("result = ", powerOf2(numBase,exspo));
 function countVocal(name){
 var sum = 0;
 for (let index = 0; index < name.length; index++) {
-    if (name[index] == 'a' || name[index] == 'i'  || name[index] == 'u' || name[index] == 'e' || name[index] == 'o' )
-    sum++
+    if (name[index] == 'a' || name[index] == 'i'  || name[index] == 'u' || name[index] == 'e' || name[index] == 'o' ){
+        sum++
+    }
+    
 }
 total = sum;
 return total;
 }
 console.log(countVocal(name_lengkap));
+
+function detectVocal(name){
+ 
+    for (let index = 0; index < name.length; index++) {
+        if (name[index] == 'a' || name[index] == 'i'  || name[index] == 'u' || name[index] == 'e' || name[index] == 'o' ){
+        console.log(name[index],"==> huruf vocal")
+
+    }
+}
+}    
+
+detectVocal(name_lengkap);
