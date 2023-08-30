@@ -1,26 +1,41 @@
 function calculator (numA,numB,operation){
     if(operation == "tambah"){
-        let total = numA + numB
-        console.log(numA,"+",numB,"=",total)
+        if(typeof numA != "number" || typeof numB != "number"){
+            console.log("bukan angka")  
+        }else
+       { let total = numA + numB
+        console.log(numA,"+",numB,"=",total)}
     }
     else if(operation == "kurang"){
-        let total = numA - numB
-        console.log(numA,"-",numB,"=",total)
+        if(typeof numA != "number" || typeof numB != "number"){
+            console.log("bukan angka")  
+        }else
+       { let total = numA - numB
+        console.log(numA,"-",numB,"=",total)}
     }
     else if(operation =="kali"){
-        let total = numA * numB
-        console.log(numA,"x",numB,"=",total)
+        if(typeof numA != "number" || typeof numB != "number"){
+            console.log("bukan angka")  
+        } else
+      {  let total = numA * numB
+        console.log(numA,"x",numB,"=",total)}
     }
     else if(operation =="bagi"){
-        let total = numA / numB
+        if(typeof numA != "number" || typeof numB != "number"){
+            console.log("bukan angka")  
+        } else
+        {let total = numA / numB
         console.log(numA,"/",numB,"=",total)
-    }
+    }}
+   
 }
 
-calculator(4,5,"kali");
+calculator(27,3,"kali");
 calculator(4,5,"tambah");
-calculator(4,5,"kurang");
-calculator(4,5,"bagi");
+calculator(9,5,"kurang");
+calculator(4,"","bagi");
+calculator(4,4,"bagi")
+
 
 
 // Expression function
