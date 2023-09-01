@@ -1,41 +1,30 @@
 function calculator (numA,numB,operation){
-    if(operation == "tambah"){
-        if(typeof numA != "number" || typeof numB != "number"){
-            console.log("bukan angka")  
-        }else
-       { let total = numA + numB
-        console.log(numA,"+",numB,"=",total)}
-    }
-    else if(operation == "kurang"){
-        if(typeof numA != "number" || typeof numB != "number"){
-            console.log("bukan angka")  
-        }else
-       { let total = numA - numB
-        console.log(numA,"-",numB,"=",total)}
-    }
-    else if(operation =="kali"){
-        if(typeof numA != "number" || typeof numB != "number"){
-            console.log("bukan angka")  
-        } else
-      {  let total = numA * numB
-        console.log(numA,"x",numB,"=",total)}
-    }
-    else if(operation =="bagi"){
-        if(typeof numA != "number" || typeof numB != "number"){
-            console.log("bukan angka")  
-        } else
-        {let total = numA / numB
-        console.log(numA,"/",numB,"=",total)
-    }}
+    if(typeof numA != "number" || typeof numB != "number"){
+        return "bukan angka"; }
+        else{
+            if(operation =="tambah"){
+                let total = numA + numB;
+                return total;
+            }
+             else if(operation =="kurang"){ 
+                let total = numA + numB;
+                return total;
+             }
+             else if(operation =="bagi"){ 
+                let total = numA / numB;
+                return total;
+             }
+             else if(operation =="kali"){ 
+                let total = numA * numB;
+                return total;
+             }
+        }
+    
    
 }
 
-calculator(27,3,"kali");
-calculator(4,5,"tambah");
-calculator(9,5,"kurang");
-calculator(4,"","bagi");
-calculator(4,4,"bagi")
-
+console.log(calculator(2,"3","kali"));
+console.log(calculator(2,9,"tambah"));
 
 
 // Expression function
